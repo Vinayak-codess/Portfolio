@@ -2,13 +2,12 @@ body{
   background-color:lightyellow;
 }
 
-
 img{
   float:left;
 }
 
 h3{
- text-align:center;"
+  text-align:center;
 }
 
 #box1{
@@ -16,9 +15,8 @@ h3{
   margin-left: 400px;
 }
 
-
 p{
-  text-align:center;" 
+  text-align:center;
 }
 
 #box2{
