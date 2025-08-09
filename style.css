@@ -11,8 +11,7 @@ h3{
 }
 
 #box1{
-  margin-right: 100px;
-  margin-left: 400px;
+  text-align:center;
 }
 
 p{
@@ -20,11 +19,9 @@ p{
 }
 
 #box2{
-  margin-right: 100px;
-  margin-left: 400px;
+  text-align:center;
 }
 
 #box3{
-  margin-right: 100px;
-  margin-left: 400px;
+  text-align:center;
 }
