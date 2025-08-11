@@ -1,27 +1,133 @@
 body{
-  background-color:#ebe7e6 ;
+  background-color:black;
+  color:white;
+  min-height: 100vh;
+  padding:0;
+ 
 }
 
-img{
-  float:left;
+
+#main{
+  background-color:black;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+   margin:0;
 }
 
-h3{
-  text-align:center;
+
+#nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:flex-end;
+  margin:0px;
+  padding:0px;
+  gap:20px;
 }
 
-#box1{
-  text-align:center;
+#nav a{
+  text-decoration:none;
+  color:white;
 }
 
-p{
-  text-align:center;
+
+#img {
+  height:70vh;
+  border-radius:10%;
+  margin:2%;
+  border: 10px solid;
+  self-align:left;
 }
 
-#box2{
-  text-align:center;
+.intro-container {
+  display: flex;
+  align-items: center;       /* vertical alignment */
+  justify-content: center;   /* horizontal centering */
+  gap:25vh;                  /* reasonable space */
+  min-height: calc(100vh - 80px); /* fill screen minus header */
+  padding: 20px;
 }
 
-#box3{
-  text-align:center;
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  text-align: left;
+  
 }
+
+#intro{
+  flex: 1;
+  margin:0;
+}
+
+
+.highlight{
+  color:#ff0000;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 2s steps(20), blink 0.6s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Stack image and text vertically */
+  .intro-container {
+    flex-direction: column;
+    gap: 20px; /* smaller space */
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Make image smaller */
+  #img {
+    max-height: 40vh;
+    width: auto;
+    border-width: 5px;
+  }
+
+  /* Center text and reduce font sizes */
+  .intro-text {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  #intro {
+    font-size: 1.5rem; 
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Navbar: stack*/
+  #nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
