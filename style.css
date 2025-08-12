@@ -37,7 +37,6 @@ body{
   border-radius:10%;
   margin:2%;
   border: 10px solid;
-  self-align:left;
 }
 
 .intro-container {
@@ -130,4 +129,207 @@ body{
   #nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+
+.about {
+  font-size:21px;
+  margin:7vh;
+}
+
+
+/* Contact Section Styling */
+#contact {
+  background:black ;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#contact .intro {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #bbb;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.contact-item {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;;
+}
+
+.contact-item:hover {
+  background: #222;
+}
+
+.icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile friendly */
+@media (max-width: 500px) {
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* Socials Section Styling */
+#socials {
+  background: black;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.socials-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+#socials h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#socials .intro {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #bbb;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.social-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.github:hover { color: #f5f5f5; }
+.twitter:hover { color: #1da1f2; }
+.linkedin:hover { color: #0077b5; }
+.instagram:hover { color: #e1306c; }
+
+/* Mobile */
+@media (max-width: 500px) {
+  #socials h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Education Section Styling */
+#education {
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#education h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#education .intro {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #bbb;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid #4da3ff;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  background: #4da3ff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #4da3ff;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  color: #ccc;
+}
+
+/* Mobile friendly */
+@media (max-width: 500px) {
+  #education h2 {
+    font-size: 1.5rem;
   }
