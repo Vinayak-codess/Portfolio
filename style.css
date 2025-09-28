@@ -85,18 +85,14 @@ body{
 }
 
 
-
-
-
 /* Mobile styles */
 @media (max-width: 768px) {
-  /* Stack image and text vertically */
   .intro-container {
     flex-direction: column;
     gap: 20px; /* smaller space */
     text-align: center;
     padding: 10px;
-  
+  }
   #img {
     max-height: 40vh;
     width: auto;
@@ -134,7 +130,6 @@ body{
   margin:7vh;
 }
 
-/* Education Section Styling */
 body{
   background-color: black;
   margin: 0px;
@@ -167,4 +162,5 @@ body{
 .education-heading{
   text-align:center;
   font-size: 23px;
+}
 }
