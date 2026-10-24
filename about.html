@@ -1,61 +1,105 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Vinayak Yadav — 17-year-old aspiring developer from Gwalior, India. Interested in web development, Linux, open source, and digital art." />
+  <title>About — Vinayak Yadav</title>
   <link rel="stylesheet" href="style.css" />
-  <title>About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
-  <header id="main">
-    <h2 class="logo">
-      <a href="index.html">Vinayak Yadav</a>
-    </h2>
-
-    <nav id="nav">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-        <li><a href="socials.html">Socials</a></li>
-        <li><a href="education.html">Education</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+    <div class="header-inner">
+      <a href="index.html" class="logo">Vinayak <span class="logo-accent">Yadav</span></a>
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
-  <div class="about">
+  <main>
+    <div class="page-wrapper">
 
+      <h1 class="page-heading">About</h1>
 
-    <p>
+      <div class="about-body">
+        <p>
+          I'm <strong>Vinayak Yadav</strong>, a 17-year-old aspiring developer and technology
+          enthusiast from India. I'm currently in my second year of a Diploma in Computer Science
+          &amp; Engineering at Dr. B.R. Ambedkar Polytechnic College, Gwalior.
+        </p>
+        <p>
+          My interests span web development and programming through to creative fields like
+          art and sketching. I enjoy working on projects that push me to learn something
+          new — whether that's refining a user interface, working through a tricky problem in
+          C or Python, or exploring what Linux can do. I've been learning independently through
+          online resources, documentation, and hands-on building for the past couple of years,
+          and I continue to do so alongside my formal studies.
+        </p>
+        <p>
+          Outside of code, I'm interested in open-source culture — how communities collaborate
+          to build software, and how transparency shapes better tools. I'm early in this journey
+          and focused on building real, functional things.
+        </p>
 
-    <h2>About me</h2>
-    <br>
+        <!-- Skills -->
+        <div class="skills-groups">
+          <h2 class="skills-groups-heading">Skills &amp; Interests</h2>
 
-    I’m <b>Vinayak Yadav</b>, A 17-year-old aspiring developer and technology enthusiast from India. I’m passionate
-    about exploring new tools, building projects, and continuously improving my skills in web and software development.
-    <br>
-    <br>
-    My interests span from web development and programming to creative fields like digital art and design. I enjoy
-    working on projects that challenge me to learn something new, whether it’s refining user interfaces, optimizing
-    code, or experimenting with innovative ideas.
-    <br>
-    <br>
-    <h3>Key Skills</h3>
-    <ul>
-      <li>C</li>
-      <li>Python</li>
-      <li>Php</li>
-      <li>HTML and CSS</li>
-    </ul>
+          <div class="skills-group">
+            <p class="skills-group-label">Languages</p>
+            <div class="skills-list">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">HTML &amp; CSS</span>
+            </div>
+          </div>
 
-    <br>
-    </p>
+          <div class="skills-group">
+            <p class="skills-group-label">Interests</p>
+            <div class="skills-list">
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Open Source</span>
+              <span class="skill-tag">Web Development</span>
+              <span class="skill-tag">Art</span>
+            </div>
+          </div>
+        </div>
 
-  </div>
+        <div class="about-links">
+          <a href="projects.html" class="btn btn--primary">View Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="education.html" class="btn btn--outline">Education <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name">Vinayak Yadav</span>
+      <span class="footer-copy">&copy; 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/vinayak-codess" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/vinayakcodes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
 </html>
